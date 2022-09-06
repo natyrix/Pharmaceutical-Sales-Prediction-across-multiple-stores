@@ -247,3 +247,26 @@ There are 6 columns that have missing values.
 2022-09-06 15:58:53,845:logger:['StoreType', 'Assortment', 'PromoInterval'] converted to string.
 2022-09-06 15:58:53,859:logger:['CompetitionOpenSinceMonth', 'CompetitionOpenSinceYear', 'Promo2SinceWeek', 'Promo2SinceYear'] converted to int.
 2022-09-06 15:59:02,501:logger:../data/train.csv with version v3merged Loaded
+2022-09-06 19:27:53,916:logger:../data/store.csv with version v1 Loaded
+2022-09-06 19:27:54,607:logger:../data/train.csv with version v1 Loaded
+2022-09-06 19:27:54,757:logger:../data/test.csv with version v1 Loaded
+2022-09-06 19:27:57,417:logger:['StateHoliday'] converted to string.
+2022-09-06 19:27:57,537:logger:['Date'] converted to datetime.
+2022-09-06 19:27:59,681:logger:Column 'Year' added.
+2022-09-06 19:28:01,357:logger:Column 'Month' added.
+2022-09-06 19:28:03,013:logger:Column 'DayOfMonth' added.
+2022-09-06 19:28:05,081:logger:Column 'WeekOfYear' added.
+2022-09-06 19:28:05,366:logger:Column 'weekday' added.
+2022-09-06 19:28:05,461:logger:2343 missing values found
+2022-09-06 19:28:05,691:logger:Your selected dataframe has 10 columns.
+There are 6 columns that have missing values.
+2022-09-06 19:28:06,014:logger:750 rows have missing values
+2022-09-06 19:28:06,490:logger:544 rows have missing values
+2022-09-06 19:28:06,746:logger:354 rows have missing values
+2022-09-06 19:28:11,276:logger:544 missing values in the column Promo2SinceWeek have been replaced by 0.
+2022-09-06 19:28:11,279:logger:544 missing values in the column Promo2SinceYear have been replaced by 0.
+2022-09-06 19:28:11,473:logger:544 missing values in the column PromoInterval have been replaced by 0,0,0,0.
+2022-09-06 19:28:16,558:logger:3 missing values in the column CompetitionDistance have been replaced by 75860.0.
+2022-09-06 19:28:17,844:logger:['StoreType', 'Assortment', 'PromoInterval'] converted to string.
+2022-09-06 19:28:17,850:logger:Cannot convert non-finite values (NA or inf) to integer
+2022-09-06 19:28:23,915:logger:../data/train.csv with version v3merged Loaded
