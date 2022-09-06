@@ -5,3 +5,156 @@
 2022-09-05 13:08:24,101:logger:../data/store.csv with version v1 Loaded
 2022-09-05 13:14:29,401:logger:../data/train.csv with version v1 Loaded
 2022-09-05 13:15:09,478:logger:../data/test.csv with version v1 Loaded
+2022-09-06 04:27:09,029:logger:../data/store.csv with version v1 Loaded
+2022-09-06 04:27:12,142:logger:../data/train.csv with version v1 Loaded
+2022-09-06 04:27:12,876:logger:../data/test.csv with version v1 Loaded
+2022-09-06 04:36:26,194:logger:[] converted to string.
+2022-09-06 04:36:26,196:logger:'Date'
+2022-09-06 04:38:47,424:logger:../data/store.csv with version v1 Loaded
+2022-09-06 04:38:49,220:logger:../data/train.csv with version v1 Loaded
+2022-09-06 04:38:49,356:logger:../data/test.csv with version v1 Loaded
+2022-09-06 04:39:08,216:logger:[] converted to string.
+2022-09-06 04:39:08,218:logger:[] converted to datetime.
+2022-09-06 04:39:24,246:logger:[] converted to string.
+2022-09-06 04:39:24,401:logger:['Date'] converted to datetime.
+2022-09-06 04:39:26,430:logger:Column 'Year' added.
+2022-09-06 04:39:28,216:logger:Column 'Month' added.
+2022-09-06 04:39:30,167:logger:Column 'DayOfMonth' added.
+2022-09-06 04:39:32,182:logger:Column 'WeekOfYear' added.
+2022-09-06 04:40:09,317:logger:[] converted to string.
+2022-09-06 04:40:09,327:logger:['Date'] converted to datetime.
+2022-09-06 04:40:11,105:logger:Column 'Year' added.
+2022-09-06 04:40:12,846:logger:Column 'Month' added.
+2022-09-06 04:40:14,565:logger:Column 'DayOfMonth' added.
+2022-09-06 04:40:16,119:logger:Column 'WeekOfYear' added.
+2022-09-06 04:40:59,037:logger:[] converted to string.
+2022-09-06 04:40:59,048:logger:['Date'] converted to datetime.
+2022-09-06 04:41:00,827:logger:Column 'Year' added.
+2022-09-06 04:41:02,833:logger:Column 'Month' added.
+2022-09-06 04:41:04,877:logger:Column 'DayOfMonth' added.
+2022-09-06 04:41:06,686:logger:Column 'WeekOfYear' added.
+2022-09-06 04:41:20,813:logger:../data/store.csv with version v1 Loaded
+2022-09-06 04:41:21,421:logger:../data/train.csv with version v1 Loaded
+2022-09-06 04:41:21,546:logger:../data/test.csv with version v1 Loaded
+2022-09-06 04:41:24,360:logger:[] converted to string.
+2022-09-06 04:41:24,517:logger:['Date'] converted to datetime.
+2022-09-06 04:41:26,625:logger:Column 'Year' added.
+2022-09-06 04:41:28,336:logger:Column 'Month' added.
+2022-09-06 04:41:29,912:logger:Column 'DayOfMonth' added.
+2022-09-06 04:41:31,875:logger:Column 'WeekOfYear' added.
+2022-09-06 04:41:32,141:logger:Column 'weekday' added.
+2022-09-06 04:43:22,084:logger:../data/store.csv with version v1 Loaded
+2022-09-06 04:43:24,038:logger:../data/train.csv with version v1 Loaded
+2022-09-06 04:43:24,172:logger:../data/test.csv with version v1 Loaded
+2022-09-06 04:43:25,738:logger:['StateHoliday'] converted to string.
+2022-09-06 04:43:25,740:logger:'Date'
+2022-09-06 04:46:22,364:logger:../data/store.csv with version v1 Loaded
+2022-09-06 04:46:22,970:logger:../data/train.csv with version v1 Loaded
+2022-09-06 04:46:23,073:logger:../data/test.csv with version v1 Loaded
+2022-09-06 04:46:25,948:logger:['StateHoliday'] converted to string.
+2022-09-06 04:46:25,949:logger:'Date'
+2022-09-06 04:46:44,583:logger:../data/store.csv with version v1 Loaded
+2022-09-06 04:46:45,155:logger:../data/train.csv with version v1 Loaded
+2022-09-06 04:46:45,234:logger:../data/test.csv with version v1 Loaded
+2022-09-06 04:46:48,735:logger:['StateHoliday'] converted to string.
+2022-09-06 04:46:48,736:logger:'Date'
+2022-09-06 04:47:30,908:logger:../data/store.csv with version v1 Loaded
+2022-09-06 04:47:31,511:logger:../data/train.csv with version v1 Loaded
+2022-09-06 04:47:31,589:logger:../data/test.csv with version v1 Loaded
+2022-09-06 04:47:34,509:logger:['StateHoliday'] converted to string.
+2022-09-06 04:47:34,634:logger:['Date'] converted to datetime.
+2022-09-06 04:47:36,790:logger:Column 'Year' added.
+2022-09-06 04:47:38,367:logger:Column 'Month' added.
+2022-09-06 04:47:39,930:logger:Column 'DayOfMonth' added.
+2022-09-06 04:47:41,909:logger:Column 'WeekOfYear' added.
+2022-09-06 04:47:42,162:logger:Column 'weekday' added.
+2022-09-06 05:32:39,573:logger:../data/store.csv with version v1 Loaded
+2022-09-06 05:32:40,708:logger:../data/train.csv with version v1 Loaded
+2022-09-06 05:32:40,805:logger:../data/test.csv with version v1 Loaded
+2022-09-06 05:32:43,841:logger:['StateHoliday'] converted to string.
+2022-09-06 05:32:43,964:logger:['Date'] converted to datetime.
+2022-09-06 05:32:46,046:logger:Column 'Year' added.
+2022-09-06 05:32:47,655:logger:Column 'Month' added.
+2022-09-06 05:32:49,286:logger:Column 'DayOfMonth' added.
+2022-09-06 05:32:51,333:logger:Column 'WeekOfYear' added.
+2022-09-06 05:32:51,591:logger:Column 'weekday' added.
+2022-09-06 05:33:27,134:logger:../data/store.csv with version v1 Loaded
+2022-09-06 05:33:27,736:logger:../data/train.csv with version v1 Loaded
+2022-09-06 05:33:27,821:logger:../data/test.csv with version v1 Loaded
+2022-09-06 05:33:30,586:logger:['StateHoliday'] converted to string.
+2022-09-06 05:33:30,712:logger:['Date'] converted to datetime.
+2022-09-06 05:33:32,839:logger:Column 'Year' added.
+2022-09-06 05:33:34,481:logger:Column 'Month' added.
+2022-09-06 05:33:36,086:logger:Column 'DayOfMonth' added.
+2022-09-06 05:33:38,083:logger:Column 'WeekOfYear' added.
+2022-09-06 05:33:38,347:logger:Column 'weekday' added.
+2022-09-06 07:50:10,824:logger:../data/store.csv with version v1 Loaded
+2022-09-06 07:50:11,525:logger:../data/train.csv with version v1 Loaded
+2022-09-06 07:50:11,619:logger:../data/test.csv with version v1 Loaded
+2022-09-06 07:50:14,441:logger:['StateHoliday'] converted to string.
+2022-09-06 07:50:14,570:logger:['Date'] converted to datetime.
+2022-09-06 07:50:16,978:logger:Column 'Year' added.
+2022-09-06 07:50:18,754:logger:Column 'Month' added.
+2022-09-06 07:50:20,565:logger:Column 'DayOfMonth' added.
+2022-09-06 07:50:22,827:logger:Column 'WeekOfYear' added.
+2022-09-06 07:50:23,105:logger:Column 'weekday' added.
+2022-09-06 07:50:23,188:logger:2343 missing values found
+2022-09-06 07:50:23,334:logger:Your selected dataframe has 10 columns.
+There are 6 columns that have missing values.
+2022-09-06 07:50:23,558:logger:750 rows have missing values
+2022-09-06 07:50:23,714:logger:544 rows have missing values
+2022-09-06 07:55:31,519:logger:354 rows have missing values
+2022-09-06 11:23:42,388:logger:../data/store.csv with version v1 Loaded
+2022-09-06 11:23:43,002:logger:../data/train.csv with version v1 Loaded
+2022-09-06 11:23:43,084:logger:../data/test.csv with version v1 Loaded
+2022-09-06 11:23:46,776:logger:['StateHoliday'] converted to string.
+2022-09-06 11:23:46,903:logger:['Date'] converted to datetime.
+2022-09-06 11:23:49,064:logger:Column 'Year' added.
+2022-09-06 11:23:50,643:logger:Column 'Month' added.
+2022-09-06 11:23:52,212:logger:Column 'DayOfMonth' added.
+2022-09-06 11:23:54,160:logger:Column 'WeekOfYear' added.
+2022-09-06 11:23:54,417:logger:Column 'weekday' added.
+2022-09-06 11:23:54,502:logger:2343 missing values found
+2022-09-06 11:23:55,918:logger:Your selected dataframe has 10 columns.
+There are 6 columns that have missing values.
+2022-09-06 11:23:56,493:logger:750 rows have missing values
+2022-09-06 11:23:56,839:logger:544 rows have missing values
+2022-09-06 11:23:57,137:logger:354 rows have missing values
+2022-09-06 11:55:24,066:logger:../data/store.csv with version v1 Loaded
+2022-09-06 11:55:24,640:logger:../data/train.csv with version v1 Loaded
+2022-09-06 11:55:24,734:logger:../data/test.csv with version v1 Loaded
+2022-09-06 11:55:28,284:logger:['StateHoliday'] converted to string.
+2022-09-06 11:55:28,397:logger:['Date'] converted to datetime.
+2022-09-06 11:55:30,405:logger:Column 'Year' added.
+2022-09-06 11:55:31,974:logger:Column 'Month' added.
+2022-09-06 11:55:33,505:logger:Column 'DayOfMonth' added.
+2022-09-06 11:55:35,396:logger:Column 'WeekOfYear' added.
+2022-09-06 11:55:35,652:logger:Column 'weekday' added.
+2022-09-06 11:55:35,716:logger:2343 missing values found
+2022-09-06 11:55:36,067:logger:Your selected dataframe has 10 columns.
+There are 6 columns that have missing values.
+2022-09-06 11:55:36,491:logger:750 rows have missing values
+2022-09-06 11:55:36,807:logger:544 rows have missing values
+2022-09-06 11:55:38,351:logger:354 rows have missing values
+2022-09-06 11:56:10,007:logger:../data/store.csv with version v1 Loaded
+2022-09-06 11:56:10,545:logger:../data/train.csv with version v1 Loaded
+2022-09-06 11:56:10,625:logger:../data/test.csv with version v1 Loaded
+2022-09-06 11:56:13,731:logger:['StateHoliday'] converted to string.
+2022-09-06 11:56:13,842:logger:['Date'] converted to datetime.
+2022-09-06 11:56:15,819:logger:Column 'Year' added.
+2022-09-06 11:56:17,376:logger:Column 'Month' added.
+2022-09-06 11:56:18,907:logger:Column 'DayOfMonth' added.
+2022-09-06 11:56:20,817:logger:Column 'WeekOfYear' added.
+2022-09-06 11:56:21,067:logger:Column 'weekday' added.
+2022-09-06 11:56:21,101:logger:2343 missing values found
+2022-09-06 11:56:21,254:logger:Your selected dataframe has 10 columns.
+There are 6 columns that have missing values.
+2022-09-06 11:56:21,455:logger:750 rows have missing values
+2022-09-06 11:56:21,594:logger:544 rows have missing values
+2022-09-06 11:56:21,750:logger:354 rows have missing values
+2022-09-06 11:56:26,061:logger:544 missing values in the column Promo2SinceWeek have been replaced by 0.
+2022-09-06 11:56:26,068:logger:544 missing values in the column Promo2SinceYear have been replaced by 0.
+2022-09-06 12:05:52,558:logger:544 missing values in the column PromoInterval have been replaced by 0,0,0,0.
+2022-09-06 12:28:41,005:logger:354 missing values in the column CompetitionOpenSinceYear have been replaced by 1900.0.
+2022-09-06 12:28:41,008:logger:354 missing values in the column CompetitionOpenSinceMonth have been replaced by 1.
+2022-09-06 12:34:37,345:logger:3 missing values in the column CompetitionDistance have been replaced by 75860.0.
