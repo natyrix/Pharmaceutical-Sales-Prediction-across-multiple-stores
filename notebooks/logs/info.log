@@ -158,3 +158,51 @@ There are 6 columns that have missing values.
 2022-09-06 12:28:41,005:logger:354 missing values in the column CompetitionOpenSinceYear have been replaced by 1900.0.
 2022-09-06 12:28:41,008:logger:354 missing values in the column CompetitionOpenSinceMonth have been replaced by 1.
 2022-09-06 12:34:37,345:logger:3 missing values in the column CompetitionDistance have been replaced by 75860.0.
+2022-09-06 12:52:53,277:logger:../data/store.csv with version v1 Loaded
+2022-09-06 12:52:54,699:logger:../data/train.csv with version v1 Loaded
+2022-09-06 12:52:54,784:logger:../data/test.csv with version v1 Loaded
+2022-09-06 12:52:57,645:logger:['StateHoliday'] converted to string.
+2022-09-06 12:52:57,759:logger:['Date'] converted to datetime.
+2022-09-06 12:52:59,844:logger:Column 'Year' added.
+2022-09-06 12:53:01,419:logger:Column 'Month' added.
+2022-09-06 12:53:02,942:logger:Column 'DayOfMonth' added.
+2022-09-06 12:53:04,825:logger:Column 'WeekOfYear' added.
+2022-09-06 12:53:05,091:logger:Column 'weekday' added.
+2022-09-06 12:53:05,159:logger:2343 missing values found
+2022-09-06 12:53:06,457:logger:Your selected dataframe has 10 columns.
+There are 6 columns that have missing values.
+2022-09-06 12:53:06,853:logger:750 rows have missing values
+2022-09-06 12:53:07,125:logger:544 rows have missing values
+2022-09-06 12:53:07,486:logger:354 rows have missing values
+2022-09-06 12:53:12,347:logger:544 missing values in the column Promo2SinceWeek have been replaced by 0.
+2022-09-06 12:53:12,354:logger:544 missing values in the column Promo2SinceYear have been replaced by 0.
+2022-09-06 12:53:12,748:logger:544 missing values in the column PromoInterval have been replaced by 0,0,0,0.
+2022-09-06 12:53:15,319:logger:354 missing values in the column CompetitionOpenSinceYear have been replaced by 1900.0.
+2022-09-06 12:53:15,325:logger:354 missing values in the column CompetitionOpenSinceMonth have been replaced by 1.
+2022-09-06 12:53:17,932:logger:3 missing values in the column CompetitionDistance have been replaced by 75860.0.
+2022-09-06 13:04:27,347:logger:['StoreType', 'Assortment', 'PromoInterval'] converted to string.
+2022-09-06 13:04:27,350:logger:['CompetitionOpenSinceMonth', 'CompetitionOpenSinceYear', 'Promo2SinceWeek', 'Promo2SinceYear'] converted to int.
+2022-09-06 13:11:57,547:logger:../data/store.csv with version v1 Loaded
+2022-09-06 13:11:58,096:logger:../data/train.csv with version v1 Loaded
+2022-09-06 13:11:58,173:logger:../data/test.csv with version v1 Loaded
+2022-09-06 13:12:00,023:logger:['StateHoliday'] converted to string.
+2022-09-06 13:12:00,140:logger:['Date'] converted to datetime.
+2022-09-06 13:12:02,141:logger:Column 'Year' added.
+2022-09-06 13:12:03,703:logger:Column 'Month' added.
+2022-09-06 13:12:05,233:logger:Column 'DayOfMonth' added.
+2022-09-06 13:12:07,054:logger:Column 'WeekOfYear' added.
+2022-09-06 13:12:07,317:logger:Column 'weekday' added.
+2022-09-06 13:12:07,378:logger:2343 missing values found
+2022-09-06 13:12:08,243:logger:Your selected dataframe has 10 columns.
+There are 6 columns that have missing values.
+2022-09-06 13:12:08,663:logger:750 rows have missing values
+2022-09-06 13:12:08,971:logger:544 rows have missing values
+2022-09-06 13:12:09,221:logger:354 rows have missing values
+2022-09-06 13:12:14,473:logger:544 missing values in the column Promo2SinceWeek have been replaced by 0.
+2022-09-06 13:12:14,479:logger:544 missing values in the column Promo2SinceYear have been replaced by 0.
+2022-09-06 13:12:15,789:logger:544 missing values in the column PromoInterval have been replaced by 0,0,0,0.
+2022-09-06 13:12:18,823:logger:354 missing values in the column CompetitionOpenSinceYear have been replaced by 1900.0.
+2022-09-06 13:12:18,831:logger:354 missing values in the column CompetitionOpenSinceMonth have been replaced by 1.
+2022-09-06 13:12:21,167:logger:3 missing values in the column CompetitionDistance have been replaced by 75860.0.
+2022-09-06 13:12:21,471:logger:['StoreType', 'Assortment', 'PromoInterval'] converted to string.
+2022-09-06 13:12:21,480:logger:['CompetitionOpenSinceMonth', 'CompetitionOpenSinceYear', 'Promo2SinceWeek', 'Promo2SinceYear'] converted to int.

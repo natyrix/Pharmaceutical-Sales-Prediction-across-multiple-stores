@@ -125,6 +125,12 @@ class CleaningPipeline():
         except Exception as e:
             logger.error(e)
 
+    def getMonth(self, month_list, index):
+        months = ['0', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec']
+        month_list = month_list.split(',')
+        month = month_list[index]
+        return months.index(month)
+
 
 
 
@@ -140,4 +146,9 @@ class CleaningPipeline():
     def run_pipeline_for_store(self, df, string_cols=[], int_cols=[]):
         self.convert_to_string(df, string_cols)
         self.convert_to_int(df, int_cols)
+        df['PromoInterval0'] = df.PromoInterval.apply((lambda x: self.getMonth(x, 0)))
+        df['PromoInterval1'] = df.PromoInterval.apply((lambda x: self.getMonth(x, 1)))
+        df['PromoInterval2'] = df.PromoInterval.apply((lambda x: self.getMonth(x, 2)))
+        df['PromoInterval3'] = df.PromoInterval.apply((lambda x: self.getMonth(x, 3)))
+
 

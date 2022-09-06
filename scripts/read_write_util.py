@@ -20,6 +20,14 @@ class ReadWriteUtil():
             df = None
             logger.error(e)
         return df
+    
+    def to_csv(self, df, csv_path, index=False):
+        try:
+            df.to_csv(csv_path, index=index)
+            logger.info(f"Saved to path {csv_path}")
+
+        except Exception as e:
+            logger.error(e)
 
 
 # if __name__ == "__main__":
