@@ -206,3 +206,18 @@ There are 6 columns that have missing values.
 2022-09-06 13:12:21,167:logger:3 missing values in the column CompetitionDistance have been replaced by 75860.0.
 2022-09-06 13:12:21,471:logger:['StoreType', 'Assortment', 'PromoInterval'] converted to string.
 2022-09-06 13:12:21,480:logger:['CompetitionOpenSinceMonth', 'CompetitionOpenSinceYear', 'Promo2SinceWeek', 'Promo2SinceYear'] converted to int.
+2022-09-06 13:15:05,608:logger:Saved to path ../data/train.csv
+2022-09-06 13:22:15,143:logger:Saved to path ../data/store.csv
+2022-09-06 13:24:40,604:logger:../data/store.csv with version v2store Loaded
+2022-09-06 13:26:32,604:logger:Saved to path ../data/store.csv
+2022-09-06 13:28:32,213:logger:Saved to path ../data/storev2.csv
+2022-09-06 13:28:39,131:logger:Saved to path ../data/store.csv
+2022-09-06 13:29:47,372:logger:../data/train.csv with version v2 Loaded
+2022-09-06 13:30:27,100:logger:../data/store.csv with version v2store Loaded
+2022-09-06 13:30:45,337:logger:../data/store.csv with version v2 Loaded
+2022-09-06 13:30:58,020:logger:../data/store.csv with version v2 Loaded
+2022-09-06 13:31:18,763:logger:unknown Git revision 'v0'
+2022-09-06 13:31:33,089:logger:../data/store.csv with version v2 Loaded
+2022-09-06 13:41:05,899:logger:Saved to path ../data/train_merged.csv
+2022-09-06 13:41:42,527:logger:Saved to path ../data/train.csv
+2022-09-06 13:46:20,190:logger:../data/train.csv with version v3merged Loaded
