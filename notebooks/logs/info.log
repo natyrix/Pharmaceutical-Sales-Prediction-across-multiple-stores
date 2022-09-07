@@ -286,3 +286,9 @@ There are 6 columns that have missing values.
 2022-09-07 18:23:02,464:logger:unknown Git revision 'v2merged'
 2022-09-07 18:23:31,378:logger:unknown Git revision 'v2train'
 2022-09-07 18:25:42,748:logger:../data/train.csv with version v3merged Loaded
+2022-09-07 18:46:18,644:logger:../data/train.csv with version v3merged Loaded
+2022-09-07 18:47:00,195:logger:RMSE Score: 987.2563139398419
+2022-09-07 18:47:00,196:logger:R2_Squared: 0.9343492792734832
+2022-09-07 18:47:00,197:logger:MAE Score: 594.701199359031
+2022-09-07 18:47:00,206:logger:Accuracy: 89.17 %.
+2022-09-07 18:47:02,378:logger:feature importance plotted
