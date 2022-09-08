@@ -1,0 +1,4 @@
+artifact_location: file:///home/n/Documents/10_Academy/Pharmaceutical-Sales-Prediction-across-multiple-stores/notebooks/mlruns/1
+experiment_id: '1'
+lifecycle_stage: active
+name: Random Forest with train data

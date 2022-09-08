@@ -39,46 +39,32 @@ def label_encoder(x):
 
 
 def get_pipeline(model, x):
-    cat_cols = get_categorical_columns(x)
-    num_cols = get_numerical_columns(
-        x)   # Remove the target column
+    try:
+        cat_cols = get_categorical_columns(x)
+        num_cols = get_numerical_columns(
+            x)   # Remove the target column
 
-    categorical_transformer = Pipeline(steps=[
-        ('onehot', OneHotEncoder(handle_unknown='ignore'))
-    ])
-    numerical_transformer = Pipeline(steps=[
-        ('scale', StandardScaler())
-    ])
-
-    preprocessor = ColumnTransformer(
-        transformers=[
-            ('num', numerical_transformer, num_cols),
-            ('cat', categorical_transformer, cat_cols)
+        categorical_transformer = Pipeline(steps=[
+            ('onehot', OneHotEncoder(handle_unknown='ignore'))
         ])
-    train_pipeline = TrainingPipeline(steps=[
-        ('preprocessor', preprocessor),
-        ('model', model)
-    ])
+        numerical_transformer = Pipeline(steps=[
+            ('scale', StandardScaler())
+        ])
 
-    return train_pipeline
+        preprocessor = ColumnTransformer(
+            transformers=[
+                ('num', numerical_transformer, num_cols),
+                # ('cat', categorical_transformer, cat_cols)
+            ])
+        train_pipeline = TrainingPipeline(steps=[
+            ('preprocessor', preprocessor),
+            ('model', model)
+        ])
+        logger.info("Piplined retrieved")
+        return train_pipeline
+    except Exception as e:
+        logger.error(e)
 
-
-def dvc_get_data(path, version='v2', experiment_name="Cleaned Data"):
-    repo = "/home/n/Documents/10_Academy/A-B-Hypothesis-Testing"
-    data_url = dvc.api.get_url(path=path, repo=repo, rev=version)
-    data_url = str(data_url)[6:]
-    df = pd.read_csv(data_url, sep=",")
-
-    mlflow.set_experiment(experiment_name)
-    # mlflow.set_tracking_uri('http://localhost:5000')
-
-
-    mlflow.log_param('data_url', path)
-    mlflow.log_param('data_version', version)
-    mlflow.log_param('rows', df.shape[0])
-    mlflow.log_param('cols', df.shape[1])
-
-    return df
 
 
 def run_train_pipeline(model, x, y, experiment_name, run_name):
@@ -97,7 +83,6 @@ def run_train_pipeline(model, x, y, experiment_name, run_name):
     X_train, X_test, y_train, y_test = train_test_split(x, y,
                                                         test_size=0.3,
                                                         random_state=123)
-    X_train, X_val, y_train, y_val = train_test_split(X_train, y_train, test_size = 0.23)
     run_params = model.get_params()
 
     train_pipeline.fit(X_train, y_train)
@@ -175,11 +160,11 @@ class TrainingPipeline(Pipeline):
             run_metrics = self.__pipeline.calculate_metrics(y_test, y_pred)
             accuracy_metrics = self.__pipeline.accuracy_metric(y_pred, y_test)
             feature_importance = self.get_feature_importance(model, X_test)
-            feature_importance_plot = self.plot_feature_importance(
-                feature_importance)
-            pred_plot = self.plot_preds(y_test, y_pred, experiment_name)
+            # feature_importance_plot = self.plot_feature_importance(
+            #     feature_importance)
+            # pred_plot = self.plot_preds(y_test, y_pred, experiment_name)
             try:
-                mlflow.end_run()
+                # mlflow.end_run()
                 mlflow.set_experiment(experiment_name)
                 mlflow.set_tracking_uri('http://localhost:5000')
                 with mlflow.start_run(run_name=run_name):
@@ -191,12 +176,12 @@ class TrainingPipeline(Pipeline):
                     mlflow.log_metric("Accuracy", accuracy_metrics['Accuracy'])
 
                     mlflow.log_param("columns", X_test.columns.to_list())
-                    mlflow.log_figure(pred_plot, "predictions_plot.png")
-                    mlflow.log_figure(feature_importance_plot,
-                                      "feature_importance.png")
-                pred_plot.savefig("../images/predictions_plot.png")
-                feature_importance_plot.savefig(
-                    "../images/feature_importance.png")
+                #     mlflow.log_figure(pred_plot, "predictions_plot.png")
+                #     mlflow.log_figure(feature_importance_plot,
+                #                       "feature_importance.png")
+                # pred_plot.savefig("../images/predictions_plot.png")
+                # feature_importance_plot.savefig(
+                #     "../images/feature_importance.png")
                 mlflow.log_dict(feature_importance, "feature_importance.json")
 
                 model_name = self.make_model_name(experiment_name, run_name)

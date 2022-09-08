@@ -292,3 +292,39 @@ There are 6 columns that have missing values.
 2022-09-07 18:47:00,197:logger:MAE Score: 594.701199359031
 2022-09-07 18:47:00,206:logger:Accuracy: 89.17 %.
 2022-09-07 18:47:02,378:logger:feature importance plotted
+2022-09-07 20:03:25,464:logger:../data/train.csv with version v3merged Loaded
+2022-09-07 20:09:25,832:logger:../data/train.csv with version v3merged Loaded
+2022-09-07 20:09:33,118:logger:Piplined retrieved
+2022-09-07 20:10:25,133:logger:RMSE Score: 960.1905768951864
+2022-09-07 20:10:25,134:logger:R2_Squared: 0.9378995799835437
+2022-09-07 20:10:25,136:logger:MAE Score: 580.4511185825282
+2022-09-07 20:10:25,148:logger:Accuracy: 89.42 %.
+2022-09-07 20:10:25,830:logger:feature importance plotted
+2022-09-07 20:42:05,476:logger:plotted prediction vs true labels
+2022-09-07 20:42:20,847:logger:RESOURCE_DOES_NOT_EXIST: No Experiment with id=1 exists
+2022-09-07 20:58:00,925:logger:../data/train.csv with version v3merged Loaded
+2022-09-07 20:58:02,743:logger:Piplined retrieved
+2022-09-07 20:58:53,861:logger:RMSE Score: 958.571893148931
+2022-09-07 20:58:53,862:logger:R2_Squared: 0.9381087805612658
+2022-09-07 20:58:53,863:logger:MAE Score: 580.3016823795808
+2022-09-07 20:58:53,871:logger:Accuracy: 89.41 %.
+2022-09-07 20:58:54,827:logger:RESOURCE_DOES_NOT_EXIST: No Experiment with id=1 exists
+2022-09-07 21:05:08,024:logger:../data/train.csv with version v3merged Loaded
+2022-09-07 21:05:09,669:logger:Piplined retrieved
+2022-09-07 21:06:05,064:logger:RMSE Score: 960.846428283928
+2022-09-07 21:06:05,065:logger:R2_Squared: 0.9378147165045703
+2022-09-07 21:06:05,066:logger:MAE Score: 580.8241411966719
+2022-09-07 21:06:05,073:logger:Accuracy: 89.41 %.
+2022-09-07 21:06:05,135:logger:start_run() got an unexpected keyword argument 'experiment_name'
+2022-09-07 21:06:24,079:logger:Piplined retrieved
+2022-09-07 21:07:13,978:logger:RMSE Score: 960.1218580259413
+2022-09-07 21:07:13,979:logger:R2_Squared: 0.937908468464724
+2022-09-07 21:07:13,979:logger:MAE Score: 580.7379426732597
+2022-09-07 21:07:13,987:logger:Accuracy: 89.41 %.
+2022-09-07 21:07:14,843:logger:start_run() got an unexpected keyword argument 'experiment_name'
+2022-09-07 21:07:29,521:logger:../data/train.csv with version v3merged Loaded
+2022-09-07 21:07:30,892:logger:Piplined retrieved
+2022-09-07 21:08:29,359:logger:RMSE Score: 957.2604189301626
+2022-09-07 21:08:29,360:logger:R2_Squared: 0.9382780181814463
+2022-09-07 21:08:29,361:logger:MAE Score: 579.3821423304922
+2022-09-07 21:08:29,369:logger:Accuracy: 89.43 %.
