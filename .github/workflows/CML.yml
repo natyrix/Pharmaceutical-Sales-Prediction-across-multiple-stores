@@ -28,6 +28,6 @@ jobs:
           # Post reports as comments in GitHub PRs
           # Random Regression
           echo "### Model Result" > report.md
-          cat training/results.txt >> report.md
+          cat training/result.txt >> report.md
           
           # cml-send-comment report.md
