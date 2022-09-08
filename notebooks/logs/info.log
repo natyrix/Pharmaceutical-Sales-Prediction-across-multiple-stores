@@ -328,3 +328,55 @@ There are 6 columns that have missing values.
 2022-09-07 21:08:29,360:logger:R2_Squared: 0.9382780181814463
 2022-09-07 21:08:29,361:logger:MAE Score: 579.3821423304922
 2022-09-07 21:08:29,369:logger:Accuracy: 89.43 %.
+2022-09-08 08:54:15,545:logger:../data/train.csv with version v3merged Loaded
+2022-09-08 08:54:18,735:logger:Piplined retrieved
+2022-09-08 08:55:17,953:logger:RMSE Score: 957.3788540749395
+2022-09-08 08:55:17,955:logger:R2_Squared: 0.9382627443773303
+2022-09-08 08:55:17,956:logger:MAE Score: 579.0009512948818
+2022-09-08 08:55:17,968:logger:Accuracy: 89.44 %.
+2022-09-08 08:55:19,007:logger:feature importance plotted
+2022-09-08 09:25:59,556:logger:plotted prediction vs true labels
+2022-09-08 09:44:52,957:logger:[Errno 2] No such file or directory: '../images/predictions_plot.png'
+2022-09-08 09:54:50,308:logger:../data/train.csv with version v3merged Loaded
+2022-09-08 09:54:54,749:logger:Piplined retrieved
+2022-09-08 09:55:46,899:logger:RMSE Score: 956.2889036030075
+2022-09-08 09:55:46,902:logger:R2_Squared: 0.9384032368195027
+2022-09-08 09:55:46,905:logger:MAE Score: 579.2189928005689
+2022-09-08 09:55:46,923:logger:Accuracy: 89.43 %.
+2022-09-08 09:55:47,582:logger:feature importance plotted
+2022-09-08 10:26:38,949:logger:plotted prediction vs true labels
+2022-09-08 11:44:20,525:logger:../data/train.csv with version v3merged Loaded
+2022-09-08 12:01:42,131:logger:../data/train.csv with version v3merged Loaded
+2022-09-08 12:32:00,069:logger:../data/store.csv with version v1 Loaded
+2022-09-08 12:32:07,668:logger:../data/train.csv with version v1 Loaded
+2022-09-08 12:32:10,495:logger:../data/test.csv with version v1 Loaded
+2022-09-08 12:32:48,313:logger:['StateHoliday'] converted to string.
+2022-09-08 12:32:48,435:logger:['Date'] converted to datetime.
+2022-09-08 12:32:50,568:logger:Column 'Year' added.
+2022-09-08 12:32:52,209:logger:Column 'Month' added.
+2022-09-08 12:32:53,843:logger:Column 'DayOfMonth' added.
+2022-09-08 12:32:55,881:logger:Column 'WeekOfYear' added.
+2022-09-08 12:32:56,144:logger:Column 'weekday' added.
+2022-09-08 12:33:08,624:logger:2343 missing values found
+2022-09-08 12:33:12,307:logger:Your selected dataframe has 10 columns.
+There are 6 columns that have missing values.
+2022-09-08 12:33:17,272:logger:750 rows have missing values
+2022-09-08 12:33:20,662:logger:544 rows have missing values
+2022-09-08 12:33:31,046:logger:354 rows have missing values
+2022-09-08 12:34:27,680:logger:544 missing values in the column Promo2SinceWeek have been replaced by 0.
+2022-09-08 12:34:27,682:logger:544 missing values in the column Promo2SinceYear have been replaced by 0.
+2022-09-08 12:34:32,174:logger:544 missing values in the column PromoInterval have been replaced by 0,0,0,0.
+2022-09-08 12:35:41,307:logger:3 missing values in the column CompetitionDistance have been replaced by 75860.0.
+2022-09-08 12:35:45,594:logger:['StoreType', 'Assortment', 'PromoInterval'] converted to string.
+2022-09-08 12:35:45,597:logger:Cannot convert non-finite values (NA or inf) to integer
+2022-09-08 12:43:13,784:logger:Saved to path ../data/train.csv
+2022-09-08 12:45:48,948:logger:unknown Git revision 'v4mergeddate'
+2022-09-08 12:46:21,277:logger:unknown Git revision 'v4mergeddate'
+2022-09-08 12:47:06,812:logger:Saved to path ../data/train_merged_with_date.csv
+2022-09-08 12:48:18,039:logger:unknown Git revision '0c4350403d54ee4b0aa5de74f98b039e92a224a8'
+2022-09-08 12:49:33,093:logger:unknown Git revision '0c4350403d54ee4b0aa5de74f98b039e92a224a8'
+2022-09-08 12:50:03,349:logger:unknown Git revision '0c4350403d54ee4b0aa5de74f98b039e92a224a8'
+2022-09-08 12:50:28,870:logger:../data/train.csv with version v3merged Loaded
+2022-09-08 12:51:05,037:logger:../data/train.csv with version v3merged Loaded
+2022-09-08 12:51:09,517:logger:unknown Git revision '0c4350403d54ee4b0aa5de74f98b039e92a224a8'
+2022-09-08 12:51:19,784:logger:../data/train.csv with version v3merged Loaded

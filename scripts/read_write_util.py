@@ -1,10 +1,10 @@
 import pandas as pd
 import dvc.api
 
-
+import datetime
 import sys
 import os
-
+import pickle
 sys.path.append(os.path.abspath(os.path.join("./scripts/")))
 from logger import logger
 
@@ -29,6 +29,13 @@ class ReadWriteUtil():
         except Exception as e:
             logger.error(e)
 
+    def save_model(self, model):
+        try:
+            model_path = '../models/' + datetime.datetime.now().strftime("%Y-%m-%d-%H-%M-%S") + '.pkl'
+            pickle.dump(model, open(model_path, 'wb'))
+            logger.info("Model saved to ../models/ folder")
+        except Exception as e:
+            logger.error(e)
 
 # if __name__ == "__main__":
 #     print(dvc_get_data("../data/store.csv", "v1").shape)

@@ -9,3 +9,11 @@
 2022-09-07 20:58:54,827:logger:RESOURCE_DOES_NOT_EXIST: No Experiment with id=1 exists
 2022-09-07 21:06:05,135:logger:start_run() got an unexpected keyword argument 'experiment_name'
 2022-09-07 21:07:14,843:logger:start_run() got an unexpected keyword argument 'experiment_name'
+2022-09-08 09:44:52,957:logger:[Errno 2] No such file or directory: '../images/predictions_plot.png'
+2022-09-08 12:35:45,597:logger:Cannot convert non-finite values (NA or inf) to integer
+2022-09-08 12:45:48,948:logger:unknown Git revision 'v4mergeddate'
+2022-09-08 12:46:21,277:logger:unknown Git revision 'v4mergeddate'
+2022-09-08 12:48:18,039:logger:unknown Git revision '0c4350403d54ee4b0aa5de74f98b039e92a224a8'
+2022-09-08 12:49:33,093:logger:unknown Git revision '0c4350403d54ee4b0aa5de74f98b039e92a224a8'
+2022-09-08 12:50:03,349:logger:unknown Git revision '0c4350403d54ee4b0aa5de74f98b039e92a224a8'
+2022-09-08 12:51:09,517:logger:unknown Git revision '0c4350403d54ee4b0aa5de74f98b039e92a224a8'
