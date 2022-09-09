@@ -17,3 +17,9 @@
 2022-09-08 12:49:33,093:logger:unknown Git revision '0c4350403d54ee4b0aa5de74f98b039e92a224a8'
 2022-09-08 12:50:03,349:logger:unknown Git revision '0c4350403d54ee4b0aa5de74f98b039e92a224a8'
 2022-09-08 12:51:09,517:logger:unknown Git revision '0c4350403d54ee4b0aa5de74f98b039e92a224a8'
+2022-09-09 08:32:20,450:logger:unknown Git revision 'v2trainp'
+2022-09-09 11:49:35,529:logger:The path '../data/train_1.csv' does not exist in the target repository '/home/n/Documents/10_Academy/Pharmaceutical-Sales-Prediction-across-multiple-stores' neither as a DVC output nor as a Git-tracked file.
+2022-09-09 12:19:18,609:logger:'CleaningPipeline' object has no attribute 'scale_column'
+2022-09-09 12:19:18,612:logger:'NoneType' object has no attribute 'dtypes'
+2022-09-09 12:19:47,293:logger:'CleaningPipeline' object has no attribute 'scale_column'
+2022-09-09 12:19:47,295:logger:'NoneType' object has no attribute 'dtypes'

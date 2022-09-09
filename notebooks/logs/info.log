@@ -380,3 +380,56 @@ There are 6 columns that have missing values.
 2022-09-08 12:51:05,037:logger:../data/train.csv with version v3merged Loaded
 2022-09-08 12:51:09,517:logger:unknown Git revision '0c4350403d54ee4b0aa5de74f98b039e92a224a8'
 2022-09-08 12:51:19,784:logger:../data/train.csv with version v3merged Loaded
+2022-09-09 08:27:23,143:logger:../data/store.csv with version v1 Loaded
+2022-09-09 08:27:27,365:logger:../data/train.csv with version v1 Loaded
+2022-09-09 08:27:29,040:logger:../data/test.csv with version v1 Loaded
+2022-09-09 08:27:55,976:logger:['StateHoliday'] converted to string.
+2022-09-09 08:27:56,129:logger:['Date'] converted to datetime.
+2022-09-09 08:27:58,378:logger:Column 'Year' added.
+2022-09-09 08:28:00,186:logger:Column 'Month' added.
+2022-09-09 08:28:01,872:logger:Column 'DayOfMonth' added.
+2022-09-09 08:28:04,055:logger:Column 'WeekOfYear' added.
+2022-09-09 08:28:04,321:logger:Column 'weekday' added.
+2022-09-09 08:28:13,638:logger:2343 missing values found
+2022-09-09 08:28:15,957:logger:Your selected dataframe has 10 columns.
+There are 6 columns that have missing values.
+2022-09-09 08:28:21,015:logger:750 rows have missing values
+2022-09-09 08:28:23,752:logger:544 rows have missing values
+2022-09-09 08:28:25,413:logger:354 rows have missing values
+2022-09-09 08:28:47,697:logger:544 missing values in the column Promo2SinceWeek have been replaced by 0.
+2022-09-09 08:28:47,700:logger:544 missing values in the column Promo2SinceYear have been replaced by 0.
+2022-09-09 08:28:50,299:logger:544 missing values in the column PromoInterval have been replaced by 0,0,0,0.
+2022-09-09 08:29:16,293:logger:354 missing values in the column CompetitionOpenSinceYear have been replaced by 1900.0.
+2022-09-09 08:29:16,296:logger:354 missing values in the column CompetitionOpenSinceMonth have been replaced by 1.
+2022-09-09 08:29:31,961:logger:3 missing values in the column CompetitionDistance have been replaced by 75860.0.
+2022-09-09 08:29:33,628:logger:['StoreType', 'Assortment', 'PromoInterval'] converted to string.
+2022-09-09 08:29:33,631:logger:['CompetitionOpenSinceMonth', 'CompetitionOpenSinceYear', 'Promo2SinceWeek', 'Promo2SinceYear'] converted to int.
+2022-09-09 08:29:48,172:logger:Saved to path ../data/train_processed.csv
+2022-09-09 08:30:16,633:logger:Saved to path ../data/train.csv
+2022-09-09 08:32:20,450:logger:unknown Git revision 'v2trainp'
+2022-09-09 11:49:25,018:logger:../data/train.csv with version v1 Loaded
+2022-09-09 11:49:35,529:logger:The path '../data/train_1.csv' does not exist in the target repository '/home/n/Documents/10_Academy/Pharmaceutical-Sales-Prediction-across-multiple-stores' neither as a DVC output nor as a Git-tracked file.
+2022-09-09 11:49:55,581:logger:../data/train.csv with version v1 Loaded
+2022-09-09 11:51:04,986:logger:../data/train.csv with version v1 Loaded
+2022-09-09 11:51:31,851:logger:../data/train.csv with version v1 Loaded
+2022-09-09 11:51:35,512:logger:../data/test.csv with version v1 Loaded
+2022-09-09 11:52:00,035:logger:['StateHoliday'] converted to string.
+2022-09-09 11:52:00,306:logger:['Date'] converted to datetime.
+2022-09-09 11:52:05,727:logger:Column 'Year' added.
+2022-09-09 11:52:07,605:logger:Column 'Month' added.
+2022-09-09 11:52:09,273:logger:Column 'DayOfMonth' added.
+2022-09-09 11:52:11,417:logger:Column 'WeekOfYear' added.
+2022-09-09 11:52:11,685:logger:Column 'weekday' added.
+2022-09-09 11:54:03,928:logger:Saved to path ../data/train_processed.csv
+2022-09-09 11:54:18,277:logger:Saved to path ../data/train.csv
+2022-09-09 12:19:18,609:logger:'CleaningPipeline' object has no attribute 'scale_column'
+2022-09-09 12:19:18,612:logger:'NoneType' object has no attribute 'dtypes'
+2022-09-09 12:19:47,293:logger:'CleaningPipeline' object has no attribute 'scale_column'
+2022-09-09 12:19:47,295:logger:'NoneType' object has no attribute 'dtypes'
+2022-09-09 12:23:51,771:logger:['Sales'] scaled between (-1, 1)
+2022-09-09 12:23:51,772:logger:Data types converted.
+2022-09-09 12:26:16,727:logger:['Sales'] scaled between (-1, 1)
+2022-09-09 12:26:16,729:logger:Data types converted.
+2022-09-09 12:28:08,391:logger:['Sales'] scaled between (-1, 1)
+2022-09-09 12:28:08,393:logger:Data types converted.
+2022-09-09 12:31:25,868:logger:941 fetched

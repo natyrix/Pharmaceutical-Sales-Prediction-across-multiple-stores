@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import sys
 import os
+from sklearn.preprocessing import MinMaxScaler, StandardScaler, Normalizer
 
 sys.path.append(os.path.abspath(os.path.join("./scripts/")))
 from logger import logger
@@ -130,6 +131,67 @@ class CleaningPipeline():
         month_list = month_list.split(',')
         month = month_list[index]
         return months.index(month)
+
+    def scale_column(self, df, column: str, range_tup: tuple = (0, 1)) -> pd.DataFrame:
+        """
+            Returns the objects DataFrames column normalized using Normalizer
+            Parameters
+        """
+        try:
+            std_column_df = pd.DataFrame(df[column])
+            std_column_values = std_column_df.values
+            minmax_scaler = MinMaxScaler(feature_range=range_tup)
+            normalized_data = minmax_scaler.fit_transform(std_column_values)
+            df[column] = normalized_data
+            return df
+        except Exception as e:
+            logger.error(e)
+
+    def scale_columns(self, df, columns: list, range_tup: tuple = (0, 1)) -> pd.DataFrame:
+        try:
+            for col in columns:
+                df = self.scale_column(df, col, range_tup)
+            logger.info(f"{columns} scaled between {range_tup}")
+            return df
+        except Exception as e:
+            logger.error(e)
+            return None
+
+    def change_datatypes(self, dataframe: pd.DataFrame) -> pd.DataFrame:
+        """
+        A simple function which changes the data types of the dataframe and returns it
+        """
+        try:
+            data_types = dataframe.dtypes
+            changes = ['float64', 'int64']
+            for col in data_types.index:
+                if(data_types[col] in changes):
+                    if(data_types[col] == 'float64'):
+                        dataframe[col] = pd.to_numeric(
+                            dataframe[col], downcast='float')
+                    elif(data_types[col] == 'int64'):
+                        dataframe[col] = pd.to_numeric(
+                            dataframe[col], downcast='unsigned')
+            logger.info(f"Data types converted.")       
+        except Exception as e:
+            logger.error(e)
+
+        return dataframe
+    
+    def get_difference(self, dataset, interval=1):
+        """
+         A function to get the difference of scaled data
+        """
+        try:
+            diff = list()
+            for i in range(interval, len(dataset)):
+                value = dataset[i] - dataset[i - interval]
+                diff.append(value)
+            logger.info(f"{len(diff)} fetched")
+            return pd.Series(diff)
+        except Exception as e:
+            logger.error(e)
+            return None
 
 
 

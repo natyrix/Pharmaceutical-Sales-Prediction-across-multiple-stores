@@ -6,6 +6,9 @@ __pycache__/
 # C extensions
 *.so
 data/train_merged_with_date.csv
+data/train_1.csv
+data/train_processed.csv
+data/train_merged_with_date.csv
 dvc-storage/57/
 notebooks/artifacts/1/0aca7351dff14ec69c0c9ffea5c39545/artifacts/models/model.pkl
 # Distribution / packaging
