@@ -1,0 +1,16 @@
+CREATE TABLE `sales_prediction_training` (
+  `index` bigint(20) DEFAULT NULL,
+  `Store` bigint(20) DEFAULT NULL,
+  `DayOfWeek` bigint(20) DEFAULT NULL,
+  `Sales` bigint(20) DEFAULT NULL,
+  `Customers` bigint(20) DEFAULT NULL,
+  `Open` bigint(20) DEFAULT NULL,
+  `Promo` bigint(20) DEFAULT NULL,
+  `StateHoliday` text DEFAULT NULL,
+  `SchoolHoliday` bigint(20) DEFAULT NULL,
+  `Year` bigint(20) DEFAULT NULL,
+  `Month` bigint(20) DEFAULT NULL,
+  `DayOfMonth` bigint(20) DEFAULT NULL,
+  `WeekOfYear` bigint(20) DEFAULT NULL,
+  `weekday` bigint(20) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
