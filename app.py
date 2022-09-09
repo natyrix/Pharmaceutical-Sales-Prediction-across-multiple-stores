@@ -15,9 +15,16 @@ def eda():
 
 
 
-@app.route('/predict')
+@app.route('/predict', methods=['GET', 'POST'])
 def predict():
-    return render_template('predict.html', title='Predict')
+    try:
+        if request.method == "GET":
+            return render_template('predict.html', title='Predict')
+        elif request.method == "POST":
+            return render_template('prediction_result.html', title='Prediction Result')
+    except Exception as e:
+        return render_template('predict.html', title='Error', error_message=str(e))
+
 
 @app.route('/technical_notes')
 def technical_notes():
