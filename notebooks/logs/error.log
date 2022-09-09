@@ -23,3 +23,4 @@
 2022-09-09 12:19:18,612:logger:'NoneType' object has no attribute 'dtypes'
 2022-09-09 12:19:47,293:logger:'CleaningPipeline' object has no attribute 'scale_column'
 2022-09-09 12:19:47,295:logger:'NoneType' object has no attribute 'dtypes'
+2022-09-09 17:53:43,762:logger:RESOURCE_DOES_NOT_EXIST: No Experiment with id=2 exists
