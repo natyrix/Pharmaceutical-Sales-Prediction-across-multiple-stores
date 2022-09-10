@@ -15,17 +15,28 @@
             <div class="form">
                 <h3>Predict by filling out the below form</h3>
                 <form action="{{ url_for('predict') }}" method="post">
-                    <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    <label for="store_id">Store ID</label>
+                    <input type="number" id="store_id" min="1" max="1115" name="store_id" placeholder="Store ID" required>
                 
-                    <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date" placeholder="Date" required>
                 
-                    <label for="country">Country</label>
-                    <select id="country" name="country">
-                      <option value="australia">Australia</option>
-                      <option value="canada">Canada</option>
-                      <option value="usa">USA</option>
+                    <label for="is_holiday">Is Holiday</label>
+                    <select id="is_holiday" name="is_holiday">
+                      <option value="0">No</option>
+                      <option value="1">Yes</option>
+                    </select>
+
+                    <label for="is_school_holiday">Is School Holiday</label>
+                    <select id="is_school_holiday" name="is_school_holiday">
+                      <option value="0">No</option>
+                      <option value="1">Yes</option>
+                    </select>
+                    
+                    <label for="is_promo">Is Promo Applied</label>
+                    <select id="is_promo" name="is_promo">
+                      <option value="0">No</option>
+                      <option value="1">Yes</option>
                     </select>
                   
                     <input type="submit" value="Submit">

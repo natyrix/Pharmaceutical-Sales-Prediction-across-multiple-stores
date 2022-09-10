@@ -448,3 +448,8 @@ There are 6 columns that have missing values.
 2022-09-09 17:53:32,453:logger:plotted prediction vs true labels
 2022-09-09 17:53:43,762:logger:RESOURCE_DOES_NOT_EXIST: No Experiment with id=2 exists
 2022-09-09 18:28:11,560:logger:../data/train.csv with version v2 Loaded
+2022-09-09 21:17:54,138:logger:Piplined retrieved
+2022-09-09 21:18:30,538:logger:RMSE Score: 1590.5568935164604
+2022-09-09 21:18:30,539:logger:R2_Squared: 0.8295966710115332
+2022-09-09 21:18:30,540:logger:MAE Score: 892.7912414021358
+2022-09-09 21:18:30,548:logger:Accuracy: 83.58 %.
