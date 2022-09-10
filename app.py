@@ -4,6 +4,7 @@ import pandas as pd
 import numpy as np
 import pickle
 from datetime import date
+from tensorflow.keras.models import load_model
 app = Flask(__name__, static_folder='staticFiles')  
 
 
@@ -17,6 +18,14 @@ class Predicter():
             "Date": [values['date']],
             "SchoolHoliday": [values['is_school_holiday']],
         }
+        # data = {
+        #     "StateHoliday": [np.asarray(values['is_holiday'])],
+        #     "Store": [np.asarray(values['store_id'])],
+        #     "Open": [np.asarray(1)],
+        #     "Promo": [np.asarray(values['is_promo'])],
+        #     "Date": [values['date']],
+        #     "SchoolHoliday": [np.asarray(values['is_school_holiday'])],
+        # }
         df = pd.DataFrame(data)
         df['Date'] = pd.to_datetime(df['Date'])
         df.set_index('Date', inplace=True)
@@ -26,11 +35,15 @@ class Predicter():
         df['WeekOfYear'] = df.index.weekofyear
         my_d = date.fromisoformat(values['date'])
         df['DayOfWeek'] = my_d.isoweekday()
+        df['weekday'] = 1 if my_d.isoweekday() not in [6,7] else 0
         return df
-    def predict(self, df):
+    def predict_random_forest(self, df):
         loaded_model = None
-        with open("./models/random_forest2022-09-09-22:04:41.pkl", 'rb') as f:
+        # with open("./models/random_forest2022-09-10-01:20:33.pkl", 'rb') as f:
+        #     loaded_model = pickle.load(f)
+        with open("./models/tss.pkl", 'rb') as f:
             loaded_model = pickle.load(f)
+        print(loaded_model)
         df = df[['StateHoliday', 'Store', 'DayOfWeek', 'Open', 'Promo',
                 'SchoolHoliday', 'Year', 'Month', 'Day', 'WeekOfYear']]
         result = loaded_model.predict(df)
@@ -40,8 +53,16 @@ class Predicter():
             'Predicted Sales': result
         }
         result_df = pd.DataFrame(result_dict)
-        result_df.to_csv('../staticFiles/result.csv')
+        result_df.to_csv('staticFiles/result.csv')
+        print("SAVED")
         return result_dict
+    def predict_tensorflow(self, df):
+        model = load_model('./models/LSTM_sales 2022-09-09-17:05:36.pkl')
+        df = df[['StateHoliday', 'Store', 'DayOfWeek', 'Open', 'Promo',
+                'SchoolHoliday', 'Year', 'Month', 'Day', 'WeekOfYear','weekday']]
+        df = np.asarray(df).astype(np.float32)
+        result = model.predict(df)
+        print(np.exp(result))
 
 
 
@@ -72,8 +93,9 @@ def predict():
             print(date)
             predictor = Predicter()
             df = predictor.preprocess(request.form)
-            result = predictor.predict(df)
-            return render_template('prediction.html', title='Prediction Result', result=result)
+            # predictor.predict_tensorflow(df)
+            result = predictor.predict_random_forest(df)
+            return render_template('predict.html', title='Prediction Result', result={})
     except Exception as e:
         return render_template('error_page.html', title='Error', error_message=str(e))
 

@@ -453,3 +453,9 @@ There are 6 columns that have missing values.
 2022-09-09 21:18:30,539:logger:R2_Squared: 0.8295966710115332
 2022-09-09 21:18:30,540:logger:MAE Score: 892.7912414021358
 2022-09-09 21:18:30,548:logger:Accuracy: 83.58 %.
+2022-09-09 22:12:57,075:logger:Piplined retrieved
+2022-09-09 22:15:08,351:logger:Piplined retrieved
+2022-09-09 22:21:39,664:logger:RMSE Score: 1671.7604726373747
+2022-09-09 22:21:43,192:logger:R2_Squared: 0.7110693221141098
+2022-09-09 22:21:43,219:logger:MAE Score: 1032.5374088954948
+2022-09-09 22:21:44,607:logger:Accuracy: 84.23 %.
