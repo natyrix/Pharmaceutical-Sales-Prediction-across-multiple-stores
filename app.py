@@ -1,4 +1,3 @@
-from cgitb import reset
 from flask import *
 import pandas as pd
 import numpy as np

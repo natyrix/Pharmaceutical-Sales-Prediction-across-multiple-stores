@@ -9,3 +9,6 @@ seaborn
 plotly
 streamlit
 regex
+flask
+pickle
+tensorflow
