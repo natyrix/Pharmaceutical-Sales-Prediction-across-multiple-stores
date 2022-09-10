@@ -8,15 +8,25 @@ app = Flask(__name__, static_folder='staticFiles')
 
 
 class Predicter():
-    def preprocess(self, values):
-        data = {
-            "StateHoliday": [values['is_holiday']],
-            "Store": [values['store_id']],
-            "Open": [1],
-            "Promo": [values['is_promo']],
-            "Date": [values['date']],
-            "SchoolHoliday": [values['is_school_holiday']],
-        }
+    def preprocess(self, values, predict_6_weeks=False):
+        if predict_6_weeks:
+            data = {
+                "StateHoliday": [0 for i in range(42)],
+                "Store": [values['store_id'] for i in range(42)],
+                "Open": [1 for i in range(42)],
+                "Promo": [values['is_promo'] for i in range(42)],
+                "Date": [values['date']],
+                "SchoolHoliday": [0 for i in range(42)],
+            }
+        else:
+            data = {
+                "StateHoliday": [values['is_holiday']],
+                "Store": [values['store_id']],
+                "Open": [1],
+                "Promo": [values['is_promo']],
+                "Date": [values['date']],
+                "SchoolHoliday": [values['is_school_holiday']],
+            }
         # data = {
         #     "StateHoliday": [np.asarray(values['is_holiday'])],
         #     "Store": [np.asarray(values['store_id'])],
@@ -40,7 +50,7 @@ class Predicter():
         loaded_model = None
         # with open("./models/random_forest2022-09-10-01:20:33.pkl", 'rb') as f:
         #     loaded_model = pickle.load(f)
-        with open("./models/tss.pkl", 'rb') as f:
+        with open("./models/random_forest2022-09-10-02:43:12.pkl.pkl", 'rb') as f:
             loaded_model = pickle.load(f)
         print(loaded_model)
         df = df[['StateHoliday', 'Store', 'DayOfWeek', 'Open', 'Promo',
@@ -54,7 +64,20 @@ class Predicter():
         result_df = pd.DataFrame(result_dict)
         result_df.to_csv('staticFiles/result.csv')
         print("SAVED")
-        return result_dict
+        # result_dict = {
+        #     'Date': df.index.values.tolist(),
+        #     'Predicted Sales': result.tolist()
+        # }
+        returned_result = []
+        for r in [result_dict]:
+            for d, s in zip(r['Date'], r['Predicted Sales']):
+                returned_result.append(
+                    {
+                        'Date': str(d).split('T')[0],
+                        'Predicted Sales': s
+                    }
+                )
+        return returned_result
     # def predict_tensorflow(self, df):
     #     model = load_model('./models/LSTM_sales 2022-09-09-17:05:36.pkl')
     #     df = df[['StateHoliday', 'Store', 'DayOfWeek', 'Open', 'Promo',
@@ -94,7 +117,7 @@ def predict():
             df = predictor.preprocess(request.form)
             # predictor.predict_tensorflow(df)
             result = predictor.predict_random_forest(df)
-            return render_template('predict.html', title='Prediction Result', result={})
+            return render_template('predict.html', title='Prediction Result', result=result)
     except Exception as e:
         return render_template('error_page.html', title='Error', error_message=str(e))
 

@@ -35,4 +35,42 @@ input[type=submit]:hover {
     margin: 20px;
 }
 
+.resultp{
+    margin: 0 18%;
+}
+#result {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 40%;
+    
+}
+  
+#result td, #result th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+  
+#result tr:nth-child(even){background-color: #f2f2f2;}
+  
+#result tr:hover {background-color: #ddd;}
+  
+#result th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+}
 
+.cd{
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.cd:hover, .cd:active {
+background-color: #4CAF50;
+}

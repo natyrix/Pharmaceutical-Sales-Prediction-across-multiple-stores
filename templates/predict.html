@@ -62,5 +62,26 @@
                   </form>
             </div>
         </div>
+        <div class="resultp">
+          {% if result -%}
+            <table id="result">
+              <tr>
+                <th>Date</th>
+                <th>Predicted Sales</th>
+              </tr>
+              {% for r in result %}
+                <tr>
+                  <td>{{r['Date']}}</td>
+                  <td>{{r['Predicted Sales']}}</td>
+                </tr>
+              {% endfor %}
+            </table>
+            <br>
+            <a href="/staticFiles/result.csv" class="cd">Download Result</a>
+          {% endif %}
+        </div>
+        <br>
+        <br>
+        <hr>
     </body>
 </html>
