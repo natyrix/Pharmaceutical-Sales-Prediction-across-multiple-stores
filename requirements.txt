@@ -9,4 +9,3 @@ seaborn
 plotly
 regex
 flask
-gunicorn
