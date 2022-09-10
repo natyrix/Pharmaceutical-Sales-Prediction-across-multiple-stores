@@ -9,5 +9,4 @@ seaborn
 plotly
 regex
 flask
-tensorflow
 gunicorn

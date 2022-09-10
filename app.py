@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import pickle
 from datetime import date
-from tensorflow.keras.models import load_model
+# from tensorflow.keras.models import load_model
 app = Flask(__name__, static_folder='staticFiles')  
 
 
@@ -55,13 +55,13 @@ class Predicter():
         result_df.to_csv('staticFiles/result.csv')
         print("SAVED")
         return result_dict
-    def predict_tensorflow(self, df):
-        model = load_model('./models/LSTM_sales 2022-09-09-17:05:36.pkl')
-        df = df[['StateHoliday', 'Store', 'DayOfWeek', 'Open', 'Promo',
-                'SchoolHoliday', 'Year', 'Month', 'Day', 'WeekOfYear','weekday']]
-        df = np.asarray(df).astype(np.float32)
-        result = model.predict(df)
-        print(np.exp(result))
+    # def predict_tensorflow(self, df):
+    #     model = load_model('./models/LSTM_sales 2022-09-09-17:05:36.pkl')
+    #     df = df[['StateHoliday', 'Store', 'DayOfWeek', 'Open', 'Promo',
+    #             'SchoolHoliday', 'Year', 'Month', 'Day', 'WeekOfYear','weekday']]
+    #     df = np.asarray(df).astype(np.float32)
+    #     result = model.predict(df)
+    #     print(np.exp(result))
 
 
 
