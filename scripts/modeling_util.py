@@ -159,10 +159,10 @@ class TrainingPipeline(Pipeline):
             y_pred = self.__pipeline.predict(X_test)
             run_metrics = self.__pipeline.calculate_metrics(y_test, y_pred)
             accuracy_metrics = self.__pipeline.accuracy_metric(y_pred, y_test)
-            feature_importance = self.get_feature_importance(model, X_test)
-            feature_importance_plot = self.plot_feature_importance(
-                feature_importance)
-            pred_plot = self.plot_preds(y_test, y_pred, experiment_name)
+            # feature_importance = self.get_feature_importance(model, X_test)
+            # feature_importance_plot = self.plot_feature_importance(
+            #     feature_importance)
+            # pred_plot = self.plot_preds(y_test, y_pred, experiment_name)
             try:
                 # mlflow.end_run()
                 mlflow.set_experiment(experiment_name)
@@ -176,13 +176,13 @@ class TrainingPipeline(Pipeline):
                     mlflow.log_metric("Accuracy", accuracy_metrics['Accuracy'])
 
                     mlflow.log_param("columns", X_test.columns.to_list())
-                    mlflow.log_figure(pred_plot, "predictions_plot.png")
-                    mlflow.log_figure(feature_importance_plot,
-                                      "feature_importance.png")
-                pred_plot.savefig("../images/predictions_plot.png")
-                feature_importance_plot.savefig(
-                    "../images/feature_importance.png")
-                mlflow.log_dict(feature_importance, "feature_importance.json")
+                    # mlflow.log_figure(pred_plot, "predictions_plot.png")
+                    # mlflow.log_figure(feature_importance_plot,
+                    #                   "feature_importance.png")
+                # pred_plot.savefig("../images/predictions_plot.png")
+                # feature_importance_plot.savefig(
+                #     "../images/feature_importance.png")
+                # mlflow.log_dict(feature_importance, "feature_importance.json")
 
                 model_name = self.make_model_name(experiment_name, run_name)
                 mlflow.sklearn.log_model(
