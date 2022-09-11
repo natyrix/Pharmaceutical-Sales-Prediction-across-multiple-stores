@@ -2,3 +2,19 @@
 2022-09-05 12:47:02,475:logger:../data/store.csv with version v1 Loaded
 2022-09-05 12:57:13,043:logger:TESTING LOGGER
 2022-09-05 12:59:23,346:scripts.logger:TESTING LOGGER
+2022-09-11 00:08:59,087:logger:'D'
+2022-09-11 00:08:59,138:logger:'S'
+2022-09-11 00:10:08,006:logger:['Date'] converted to datetime.
+2022-09-11 00:10:08,007:logger:['StateHoliday'] converted to string.
+2022-09-11 00:10:48,150:logger:['Date'] converted to datetime.
+2022-09-11 00:10:48,151:logger:['StateHoliday'] converted to string.
+2022-09-11 00:11:41,404:logger:['Date'] converted to datetime.
+2022-09-11 00:11:41,405:logger:['StateHoliday'] converted to string.
+2022-09-11 00:12:03,744:logger:['Date'] converted to datetime.
+2022-09-11 00:12:03,744:logger:['StateHoliday'] converted to string.
+2022-09-11 00:12:24,849:logger:['Date'] converted to datetime.
+2022-09-11 00:12:24,850:logger:['StateHoliday'] converted to string.
+2022-09-11 00:12:47,201:logger:['Date'] converted to datetime.
+2022-09-11 00:12:47,202:logger:['StateHoliday'] converted to string.
+2022-09-11 00:12:56,739:logger:['Date'] converted to datetime.
+2022-09-11 00:12:56,740:logger:['StateHoliday'] converted to string.
