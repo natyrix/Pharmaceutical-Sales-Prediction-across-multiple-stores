@@ -7,7 +7,6 @@ __pycache__/
 *.so
 data/train_merged_with_date.csv
 data/train_1.csv
-data/train_processed.csv
 data/train_merged_with_date.csv
 dvc-storage/57/
 notebooks/artifacts/
