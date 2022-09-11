@@ -12,7 +12,8 @@ from sklearn.pipeline import Pipeline
 from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import StandardScaler, OrdinalEncoder
 from sklearn.ensemble import RandomForestRegressor
-
+from time import gmtime, strftime
+import pickle
 import numpy as np
 import pandas as pd
 import seaborn as sns
@@ -20,22 +21,19 @@ import sys
 import warnings
 import os
 
-data = pd.read_csv('data/train_merged.csv', sep=',')
+data = pd.read_csv('data/train_processed.csv', sep=',')
 
-# mlflow.set_experiment('Sales Prediction')
 
 if __name__ == '__main__':
-    # with mlflow.start_run():
-    warnings.filterwarnings("ignore")
     
-    data.set_index('Year', inplace=True)
+    data.set_index('Date', inplace=True)
 
     data.drop(['StateHoliday'], axis=1, inplace=True)
 
     data = data[data['Open'] == 1]
     data = data[data['Sales'] > 0.0]
 
-    X = data.drop('Sales', axis=1)
+    X = data.drop(columns=['Sales','Customers'], axis=1)
     y = data['Sales']
     X_train, X_test, y_train, y_test = train_test_split(
         X, y, test_size=0.2, random_state=123)
@@ -49,8 +47,8 @@ if __name__ == '__main__':
                                             RandomForestRegressor(n_estimators=12, random_state=42))
     ])
 
-    rf_model = pipeline.fit(X_train, y_train)
-    val_accuracy = rf_model.score(X_test, y_test)
-    with open("train/metrics.txt", 'w') as outfile:
+    model = pipeline.fit(X_train, y_train)
+    val_accuracy = model.score(X_test, y_test)
+    with open("training/result.txt", 'w') as outfile:
         outfile.write(
             f"Validation data accuracy: {val_accuracy}")

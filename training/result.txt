@@ -1,1 +1,1 @@
-Validation data accuracy: 0.8995872838058896
+Validation data accuracy: 0.7022083684064682

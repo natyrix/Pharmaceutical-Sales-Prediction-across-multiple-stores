@@ -1,0 +1,6 @@
+services:
+  streamlit:
+    container_name: "Sales_prediction"
+    build:
+      dockerfile: ./Dockerfile
+      context: ./
