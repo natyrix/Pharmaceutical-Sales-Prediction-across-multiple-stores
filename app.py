@@ -137,7 +137,7 @@ def eda():
 
 @app.route('/predict', methods=['GET', 'POST'])
 def predict():
-    # try:
+    try:
         if request.method == "GET":
             return render_template('predict.html', title='Predict')
         elif request.method == "POST":
@@ -152,8 +152,8 @@ def predict():
             # predictor.predict_tensorflow(df)
             result, fn = predictor.predict_random_forest(df)
             return render_template('predict.html', title='Prediction Result', result=result, filen=fn)
-    # except Exception as e:
-    #     return render_template('error_page.html', title='Error', error_message=str(e))
+    except Exception as e:
+        return render_template('error_page.html', title='Error', error_message=str(e))
 
 
 @app.route('/upload_and_test', methods=['POST'])
